@@ -1,0 +1,48 @@
+.books {
+    background: url('../img/cards/fon.png') no-repeat center center / cover, #FFC940;
+    padding: 90px 0;
+    margin: 80px 0;
+
+    &__title {
+        .version-magazine &,
+        .version-books & {
+            font-size: 48px;
+            line-height: 55px;
+        }
+    }
+
+    .slick-list {
+        padding-right: 140px;
+    }
+
+    .slick-slide {
+        margin-right: 20px;
+    }
+
+    .slick-dots {
+        bottom: -50px;
+    }
+
+    .slick-dots li {
+        margin: 0 3px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .slick-dots li.slick-active button::before {
+        background: #0044DB;
+    }
+
+    .slick-dots li button::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 8px;
+        height: 8px;
+        content: "";
+        opacity: 1;
+        background: transparent;
+        border-radius: 100%;
+        border: 0.472242px solid #000000;
+    }
+}

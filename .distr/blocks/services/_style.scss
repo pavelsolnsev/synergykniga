@@ -1,0 +1,153 @@
+.services {
+    color: #000;
+
+    &__wrapper {
+        background-color: #fff;
+        padding: 44px 0 14px;
+        position: relative;
+    }
+
+    &__box {
+        display: flex;
+        margin-bottom: 103px;
+    }
+
+    &__logo {
+        margin-right: 23px;
+    }
+
+    &__head {
+        margin-bottom: 55px;
+
+        &-name {
+            font-size: 20px;
+            line-height: 109.62%;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        &-title {
+            font-size: 40px;
+            line-height: 107.18%;
+            margin-bottom: 13px;
+        }
+
+        &-text {
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        &-link {
+            font-size: 14px;
+            line-height: 109.62%;
+            text-decoration-line: underline;
+            color: #0044DB;
+        }
+    }
+
+    &__body {
+        margin-bottom: 62px;
+
+        &-price {
+            display: flex;
+        }
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 10px 15px;
+            transition: ease all .3s;
+            border: 2px solid transparent;
+            border-radius: 9px;
+            cursor: pointer;
+            margin-bottom: 25px;
+
+            &.active {
+                border: 2px solid $blue;
+                border-radius: 9px;
+            }
+
+            img {
+                margin-bottom: 5px;
+            }
+
+            div {
+                font-size: 13px;
+                line-height: 14px;
+                margin-bottom: 2px;
+            }
+
+            span {
+                font-weight: 700;
+                font-size: 13px;
+                line-height: 14px;
+            }
+        }
+
+        &-button {
+            max-width: 177px;
+            height: 32px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+            border-radius: 40px;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #000;
+            font-weight: 700;
+            font-family: $ProximaNova;
+
+            &:hover {
+                color: #000;
+            }
+        }
+    }
+
+    &__list {
+        max-width: 330px;
+
+        li {
+            overflow: hidden;
+
+            &:after {
+                content: '..................................................';
+                display: block;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            span {
+                font-size: 15px;
+                line-height: 20px;
+
+                &:first-of-type {
+                    float: left;
+                    margin-right: 10px;
+                }
+
+                &:last-of-type {
+                    float: right;
+                    margin-left: 10px;
+                    width: 160px;
+                }
+            }
+        }
+    }
+
+    /*--- DESCRIPTION ---*/
+    &__desc {
+
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #000;
+            margin-bottom: 23px;
+        }
+
+    }
+
+    /*--- DESCRIPTION FINISH ---*/
+}

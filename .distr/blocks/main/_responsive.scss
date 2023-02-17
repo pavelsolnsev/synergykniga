@@ -1,0 +1,27 @@
+.main {
+
+  @media (max-width: 1199px) {
+    &__title {
+      font-size: 60.3188px;
+      span {
+        font-size: 33.7267px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {}
+
+  @media (max-width: 767px) {
+    &__title {
+      font-size: 46.3419px;
+      span {
+        font-size: 25.9117px;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {}
+
+  @media (max-width: 359px) {}
+
+}

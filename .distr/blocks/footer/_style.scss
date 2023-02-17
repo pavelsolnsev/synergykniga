@@ -1,0 +1,39 @@
+.footer {
+    padding: 80px 0 0px;
+    .page-lk & {
+        padding: 80px 0;
+        background: #F1F1F1;
+    }
+    .container {
+        border-top: 2px solid #8A8A8A;
+        padding-top: 21px;
+    }
+    &__box {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    &__logo {
+        margin-right: 132px;
+    }
+
+    &__content {
+        font-size: 16px;
+        line-height: 25px;
+        color: #3D3D3D;
+    }
+
+    &__button {
+        margin-left: auto;
+        background-color: $red;
+        font-weight: 600;
+        font-size: 15px;
+        max-width: 125px;
+        height: 48px;
+        color: #fff;
+        &:active {
+            background-color: #C91260;
+        }
+    }
+}

@@ -1,0 +1,109 @@
+.filters {
+    @media (max-width: 1199px) {
+        margin: 12px 0 40px;
+
+        &__group {
+            flex-basis: 100%;
+        }
+
+        &__wrap {
+            max-width: 100%;
+        }
+
+        .filter_type {
+            top: 7px;
+        }
+
+        .filter {
+            &__name {
+                &.active {
+                    &:after {
+                        top: -1px;
+                        right: 2px;
+                    }
+                }
+            }
+            &__drop {
+                padding: 15px;
+            }
+            &__list {
+                &-label {
+                    font-size: 12px;
+                    line-height: 17px;
+                }
+            }
+        }
+
+        .item-style {
+            font-size: 9.30223px;
+            height: 24px;
+            padding: 0 12px;
+
+            &:after {
+                background-size: 7px !important;
+            }
+        }
+
+        .choice {
+            &-value {
+                &-del {
+                    background-size: 7px;
+                    margin-top: 6px;
+                }
+            }
+
+            &-delete {
+                display: none;
+
+            }
+        }
+
+        .jq-selectbox .placeholder,
+        .jq-selectbox__select-text {
+            font-size: 9.30223px;
+        }
+
+        .jq-selectbox__trigger-arrow {
+            background-size: 5px;
+        }
+
+        .jq-selectbox__dropdown {
+            ul {
+                li {
+                    font-size: 12px;
+                    margin-bottom: 12px;
+
+                    &:last-of-type {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+
+        .jq-selectbox {
+            &.opened {
+                .jq-selectbox__dropdown {
+                    top: 15px !important;
+                }
+            }
+        }
+
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        .item-style {
+            font-size: 12px;
+            height: 29px;
+        }
+        .jq-selectbox .placeholder,
+        .jq-selectbox__select-text {
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 575px) {}
+
+    @media (max-width: 359px) {}
+}

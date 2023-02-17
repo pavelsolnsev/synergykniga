@@ -1,0 +1,121 @@
+.catalog {
+  background-color: #F5F5F5;
+  margin: 0 0 67px;
+
+  &__wrapper {
+    background-color: #fff;
+    padding: 92px 0 80px;
+  }
+
+  &__title {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+
+    span {
+      font-size: 18px;
+      color: #000000;
+      font-weight: 400;
+      display: block;
+      line-height: 1.2;
+      margin-left: 6px;
+    }
+  }
+
+  &__search {
+    display: flex;
+    height: 43px;
+    position: relative;
+
+    input {
+      width: 100%;
+      background: #EFEFEF;
+      border-radius: 17.0541px;
+      border: none;
+      font-size: 18px;
+      height: 100%;
+      padding-left: 15px;
+      outline: none;
+      color: #737373;
+    }
+
+    button {
+      max-width: 128px;
+      width: 100%;
+      font-weight: 600;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      background: $blue;
+      color: #fff;
+      border-radius: 17.0541px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      position: absolute;
+      right: 0;
+
+      &:before {
+        content: url('../img/catalog/search.svg');
+        margin-right: 5px;
+      }
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__link {
+    &.active {
+      background: $blue;
+      color: #fff;
+    }
+  }
+
+  &__cards {
+    margin-bottom: 63px;
+  }
+
+  .cards__item[data-more-hidden] {
+    padding-bottom: 0;
+      position: absolute;
+      top: 9999px;
+      left: -9999px;
+      opacity: 0;
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    max-width: 480px;
+    justify-content: space-between;
+
+    &-more {
+      max-width: 197px;
+      height: 75px;
+      margin-right: 63px;
+    }
+
+    &-open {
+      background: transparent;
+      font-weight: 500;
+      color: #000;
+      justify-content: flex-start;
+
+      &:hover {
+        color: inherit;
+      }
+    }
+  }
+
+}

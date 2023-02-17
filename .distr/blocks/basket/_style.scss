@@ -1,0 +1,154 @@
+.basket {
+    &__title {
+        margin-bottom: 41px;
+    }
+
+    &__selectors {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+
+        label {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            line-height: 100%;
+            margin-right: 25px;
+            white-space: nowrap;
+
+            span {
+                margin-left: 10px;
+            }
+        }
+
+        input {
+            border: none;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        &-check {
+            color: #2D2D2D;
+        }
+
+        &-uncheck {
+            color: $red;
+        }
+    }
+
+    &__input {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+
+    &__box {
+        background-color: #fff;
+        position: relative;
+        padding: 46px 0;
+    }
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    &__block {
+        display: flex;
+        align-items: center;
+        max-width: 585px;
+        width: 100%;
+        border-bottom: 1px solid #E6E6E6;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__img {
+        margin-right: 34px;
+        display: flex;
+        align-items: center;
+
+        input {
+            margin-right: 10px;
+        }
+    }
+
+    &__content {
+        margin-right: 70px;
+
+        &-title {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 100%;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+
+        &-name {
+            font-size: 18px;
+            line-height: 100%;
+            color: #000000;
+            margin-bottom: 38px;
+        }
+
+        &-desc {
+            font-size: 18px;
+            line-height: 100%;
+            color: #737373;
+            margin-bottom: 37px;
+        }
+
+        &-link {
+            font-size: 18px;
+            line-height: 100%;
+            text-decoration: underline;
+            color: $blue;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 100%;
+            color: #000000;
+            margin-right: 70px;
+            white-space: nowrap;
+        }
+        &-link {
+            display: none;
+            font-size: 18px;
+            line-height: 100%;
+            text-decoration: underline;
+            color: $blue;
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &__select {
+        display: none;
+    }
+
+    .jq-selectbox {
+        background: #E6E6E6;
+        border-radius: 2px;
+        max-width: 68px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3px 10px;
+    }
+
+}

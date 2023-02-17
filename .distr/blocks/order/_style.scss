@@ -1,0 +1,224 @@
+.order {
+    max-width: 264px;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFC940;
+    padding: 30px;
+    .version-basket & {
+        max-width: 358px;
+    }
+
+    &__head {
+        margin-bottom: 10px;
+
+        .version-basket & {
+            margin-bottom: 50px;
+            
+        }
+
+        >span {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 109.62%;
+            color: #0044DB;
+            font-family: $ProximaNova;
+            display: block;
+
+            .version-basket & {
+                font-weight: 700;
+                font-size: 22px;
+                line-height: 100%;
+                color: #000000;
+                margin-bottom: 15px;
+            }
+
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+
+            span {
+                font-family: $ProximaNova;
+                font-size: 16px;
+                line-height: 109.62%;
+                white-space: nowrap;
+                margin-right: 10px;
+
+                .version-basket & {
+                    font-size: 18px;
+                    line-height: 100%;
+                    color: #000000;
+                    margin-right: 0;
+                }
+
+            }
+        }
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 56.25px;
+        line-height: 62px;
+        text-transform: uppercase;
+        color: #000000;
+        font-family: $ProximaNova;
+        margin-bottom: 30px;
+        .version-basket & {
+            line-height: 100%;
+            color: #0044DB;
+        }
+
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+        color: #000000;
+        margin-bottom: 15px;
+    }
+
+    &__body {
+        div {
+            font-size: 14px;
+            line-height: 17px;
+            color: #2D2D2D;
+            font-family: $ProximaNova;
+        }
+
+        /*--- RADIO ---*/
+        &_wrap {
+            margin-top: 15px;
+
+            div {
+                margin-bottom: 20px;
+            }
+
+            span {
+                display: block;
+                font-size: 14px;
+                line-height: 100%;
+                font-weight: 400;
+                margin-top: 5px;
+            }
+
+            [type="radio"]:checked,
+            [type="radio"]:not(:checked) {
+                position: absolute;
+                left: -9999px;
+            }
+
+            [type="radio"]:checked+label,
+            [type="radio"]:not(:checked)+label {
+                position: relative;
+                padding-left: 28px;
+                cursor: pointer;
+                display: inline-block;
+                font-weight: 600;
+                font-size: 16px;
+                color: #2D2D2D;
+            }
+
+            [type="radio"]:checked+label:before,
+            [type="radio"]:not(:checked)+label:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 1px;
+                width: 14px;
+                height: 14px;
+                border: 0.777778px solid #2D2D2D;
+                border-radius: 100%;
+                background: transparent;
+            }
+
+            [type="radio"]:checked+label:after,
+            [type="radio"]:not(:checked)+label:after {
+                content: '';
+                width: 8px;
+                height: 8px;
+                background: #2D2D2D;
+                position: absolute;
+                top: 4px;
+                left: 3px;
+                border-radius: 100%;
+                -webkit-transition: all 0.3s ease;
+                transition: all 0.3s ease;
+            }
+
+            [type="radio"]:not(:checked)+label:after {
+                opacity: 0;
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            }
+
+            [type="radio"]:checked+label:after {
+                opacity: 1;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        /*--- RADIO FINISH ---*/
+    }
+
+    &__button {
+        height: 51px;
+    }
+
+    /*--- COUNTER - + ---*/
+    .counter {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 100%;
+
+        &__input {
+            border: none;
+            outline: none;
+            transition: .2s;
+            background: transparent;
+            width: 20px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        &__top,
+        &__bottom {
+            cursor: pointer;
+            transition: .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 700;
+            padding: 5px;
+        }
+
+        &__top {
+            &:after {
+                content: '+';
+                color: #0044DB;
+            }
+        }
+
+        &__bottom {
+            &:after {
+                content: '-';
+                color: #0044DB;
+            }
+        }
+    }
+
+    /*--- COUNTER - + FINISH ---*/
+
+}

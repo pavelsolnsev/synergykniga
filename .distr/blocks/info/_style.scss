@@ -1,0 +1,35 @@
+.info {
+    background-color: #fff;
+    padding: 50px 0 70px;
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__title {
+        margin-bottom: 104px;
+    }
+
+    &__img {
+        margin-bottom: 21px;
+        max-width: 50px;
+    }
+
+    &__text {
+        margin-bottom: 20px;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 100%;
+    }
+
+    &__link {
+        margin-top: auto;
+        color: $blue;
+        text-decoration: underline;
+        &:hover {
+            color: $blue;
+        }
+    }
+}

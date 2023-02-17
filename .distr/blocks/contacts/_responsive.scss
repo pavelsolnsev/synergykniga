@@ -1,0 +1,44 @@
+.contacts {
+    @media (max-width: 1199px) {
+        padding: 20px 0 42px;
+        &__title {
+            margin-bottom: 35px;
+        }
+        &__adres {
+            font-size: 18.6045px;
+            line-height: 89%;
+            margin-bottom: 26px;
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        &__phone {
+            font-size: 11.3694px;
+            line-height: 145%;
+        }
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        padding: 50px 0 100px;
+        &__title {
+            font-size: 30px;
+            margin-bottom: 33px;
+        }
+
+        &__adres {
+            display: none;
+        }
+
+        &__phone {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 575px) {}
+
+    @media (max-width: 359px) {}
+}

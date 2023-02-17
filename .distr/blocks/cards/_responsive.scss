@@ -1,0 +1,39 @@
+.books {
+    @media (max-width: 1199px) {
+        padding: 50px 0;
+        margin: 40px 0;
+
+        &__title {
+
+            .version-magazine &,
+            .version-books & {
+                font-size: 24.825px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        background: url('../img/cards/fon-mob.png') no-repeat top right, #FFC940;
+        margin: 40px -15px 0 -15px;
+        padding: 40px 0 100px;
+
+        &__title {
+            .version-magazine &,
+            .version-books & {
+                font-size: 22px;
+                line-height: 55px;
+            }
+        }
+
+        .container-inner {
+            padding: 0 0 0 15px;
+        }
+    }
+
+    @media (max-width: 575px) {}
+
+    @media (max-width: 359px) {}
+}

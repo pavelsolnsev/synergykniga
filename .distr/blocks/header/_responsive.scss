@@ -1,0 +1,125 @@
+.header {
+    @media (max-width: 1199px) {
+        padding: 29px 0;
+        &__content {
+            margin-bottom: 26px;
+        }
+        &__logo {
+            max-width: 160px;
+        }
+
+        &__contacts {
+            max-width: 225px;
+        }
+
+        &__phone {
+            img {
+                width: 15px;
+                margin-right: 6px;
+            }
+        }
+
+        &__basket {
+            display: flex;
+            align-items: center;
+            img {
+                width: 15px;
+                margin-right: 6px;
+            }
+        }
+
+        &__lk {
+            img {
+                width: 15px;
+            }
+        }
+
+        &__number {
+            span {
+                width: 9px;
+                height: 9px;
+                font-size: 7.24337px;
+                bottom: -4px;
+            }
+        }
+
+        nav {
+            width: 470px;
+            ul {
+                li {
+                    &:before {
+                        width: 5.52px;
+                        height: 5.52px;
+                        margin-right: 6px;
+                    }
+
+                    a {
+                        font-size: 12.4172px;
+                    }
+                }
+            }
+        }
+
+
+        &__number {
+            img {
+                width: 24px;
+            }
+            span {
+                width: 13px;
+                height: 13px;
+                font-size: 10.9689px;
+                bottom: -6px;
+            }
+        }
+
+        &__hamburger {
+            display: flex; // UPH-7
+        }
+
+        &__lk {
+            display: none;
+        }
+
+        nav, &__text {
+            display: none;
+        }
+        &__content {
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 991px) {
+
+    }
+
+    @media (max-width: 767px) {
+        padding: 21px 0 40px;
+        // &__content {
+        //     margin-bottom: 0;
+        // }
+        &__logo {
+            max-width: 244px;
+        }
+
+        // nav, &__text {
+        //     display: none;
+        // }
+
+        &__contacts {
+            justify-content: flex-end;
+            span {
+                display: none;
+            }
+        }
+
+    }
+
+    @media (max-width: 575px) {
+        
+    }
+
+    @media (max-width: 359px) {
+
+    }
+}

@@ -1,0 +1,136 @@
+.orders {
+    @media (max-width: 1199px) {
+        padding: 0;
+        &__title {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 28px;
+        }
+        &__box {
+            &-order,
+            &-fullprice {
+                font-size: 20px;
+                line-height: 22px;
+            }
+            &-pay,
+            &-cancel {
+                max-width: 150px;
+                font-size: 18px;
+                line-height: 46px;
+                cursor: pointer;
+            }
+            &-items {
+                margin: 30px 0;
+            }
+        }
+        &__item {
+            padding: 0;
+            border: none;
+            width: auto;
+            img {
+                flex-basis: 88px;
+                width: 88px;
+            }
+            &-box {
+                padding: 0;
+                flex-basis: calc(100% - 106px);
+            }
+            &-name {
+                font-size: 16px;
+            }
+            &-price {
+                font-size: 20px;
+                line-height: 22px;
+            }
+        }
+        &__btn {
+            height: 43px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {}
+
+    @media (max-width: 625px) {
+        &__box {
+            &-top {
+                flex-wrap: wrap;
+            }
+            &-order {
+                flex-basis: 100%;
+                margin-bottom: 15px;
+            }
+            &-bottom {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+            &-fullprice {
+                flex-basis: 100%;
+                margin-bottom: 15px;
+            }
+            &-pay {
+                margin: 0 20px 0 0;
+            }
+            &-pay,
+            &-cancel {
+                font-size: 16px;
+                line-height: 40px;
+                height: 40px;
+            }
+        }
+        &__item {
+            border-top: 1px solid #D9D9D9;
+            align-items: flex-start;
+            padding-top: 20px;
+            &:first-child {
+                border-top: none;
+            }
+            &-bottom {
+                flex-wrap: wrap;
+            }
+            &-type {
+                flex-basis: 100%;
+            }
+        }
+        &__btn {
+            margin-top: 0;
+        }
+    }
+
+    @media (max-width: 425px) {
+        &__box {
+            &-bottom {
+                display: block;
+            }
+            &-pay {
+                margin: 10px 0;
+            }
+        }
+        &__item {
+            &-name {
+                font-size: 14px;
+                padding-top: 0;
+            }
+            &-count {
+                margin: 8px 0;
+            }
+            &-bottom {
+                display: block;
+            }
+            &-price {
+                font-size: 16px;
+            }
+        }
+    }
+
+    @media (max-width: 359px) {
+        &__item {
+            &-name {
+                font-size: 14px;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.about {
+    @media (max-width: 1199px) {
+        padding: 35px 0 35px;
+        &__title {
+            margin-bottom: 28px;
+        }
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        padding: 20px 0 20px;
+        &__title {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{{ form.form( 'reg', form_class='form_horisontal') }}

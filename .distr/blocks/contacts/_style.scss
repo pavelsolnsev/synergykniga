@@ -1,0 +1,36 @@
+.contacts {
+    background: url('../img/contacts/bg.jpg') no-repeat 0 0 / cover;
+    padding: 50px 0 80px;
+
+    &__title {
+        margin-bottom: 71px;
+    }
+
+    &__adres {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 89%;
+        margin-bottom: 52px;
+        span {
+            font-size: 22px;
+        }
+    }
+
+    &__phone {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 32px;
+        a {
+            color: $blue;
+        }
+        span {
+            &:first-of-type {
+                color: $blue;
+            }
+            &:last-of-type {
+                font-weight: 400;
+            }
+        }
+    }
+
+}

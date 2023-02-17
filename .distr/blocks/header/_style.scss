@@ -1,0 +1,128 @@
+.header {
+    padding: 53px 0 23px;   // UPH-7
+    position: fixed;   // UPH-7
+    z-index: 9999;   // UPH-7
+    top: 0;   // UPH-7
+    left: 0;   // UPH-7
+    right: 0;   // UPH-7
+    background: transparent; // UPH-7
+    transition: all ease .3s; // UPH-7
+    &.active {
+        background: #F5F5F5; // UPH-7
+        padding: 15px 0; // UPH-7
+    }
+
+    .page-lk & {
+        background: #F1F1F1;
+    }
+    
+    &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        max-width: 461px;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    &__phone {
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 11px;
+        }
+    }
+
+    &__basket {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 11px;
+        }
+    }
+
+    &__lk {
+        display: flex;
+        img {
+            margin-right: 8px;
+        }
+    }
+
+    &__number {
+        position: relative;
+        span {
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 17px;
+            height: 17px;
+            background-color: $blue;
+            border-radius: 100%;
+            font-weight: 600;
+            font-size: 14px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__text {
+        color: $blue;
+        font-weight: 600;
+    }
+
+    nav {
+        width: 910px;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            li {
+                display: flex;
+                align-items: center;
+
+                &:before {
+                    content: "";
+                    display: block;
+                    background-color: #012bc1;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+
+                a {
+                    font-weight: 600;
+                    font-size: 24px;
+                    text-decoration: none;
+                    &.active {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+    }
+
+    &__hamburger {
+        height: 20px;
+        width: 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 10px;
+        display: none;
+        div {
+            background: #000;
+            height: 2px;
+            width: 100%;
+        }
+    }
+}

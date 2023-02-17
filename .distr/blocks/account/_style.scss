@@ -1,0 +1,59 @@
+.account {
+    padding: 32px 0;
+    // font-family: $gilroy;
+    &__top {
+        // font-family: $gilroy;
+        margin-bottom: 20px;
+        color: #000;
+        span {
+            color: #767676;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__sidebar {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        padding: 24px;
+        background: #fff;
+        width: 270px;
+        margin-right: 20px;
+
+        display: flex;
+        flex-wrap: wrap;
+        div {
+            padding: 8px 0;
+            cursor: pointer;
+            &.active {
+                color: #0044DB;
+            }
+        }
+        &-btn {
+            width: 100%;
+            border: 1px solid #F4B511;
+            background: #fff;
+            padding: 12px 0;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            margin-top: 24px;
+            cursor: pointer;
+        }
+    }
+
+    &__box {
+        flex-basis: calc(100% - 270px);
+        &-block {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+
+}

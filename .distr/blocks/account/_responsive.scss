@@ -1,0 +1,30 @@
+.account {
+    @media (max-width: 1199px) {
+        background: #fff;
+        &__top {
+            display: none;
+        }
+        &__sidebar {
+            display: none;
+        }
+        &__box {
+            flex-basis: 100%;
+            padding: 0;
+        }
+
+    }
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+
+        // .container {
+        //     padding: 0;
+        // }
+
+    }
+
+    @media (max-width: 575px) {}
+
+    @media (max-width: 359px) {}
+}

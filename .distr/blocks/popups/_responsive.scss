@@ -1,0 +1,50 @@
+.popups {
+
+    @media (max-width: 1199px) {}
+
+    @media (max-width: 991px) {}
+
+    @media (max-width: 767px) {
+        padding: 40px 25px;
+
+    }
+
+    @media (max-width: 575px) {}
+}
+
+.popup-lk {
+    @media (max-width: 625px) {
+        padding: 20px 30px 30px;
+        &__tabs {
+            font-size: 28px;
+            line-height: 36px;
+            margin: 20px 0;
+        }
+        .form__items {
+            display: block;
+        }
+        .form__input {
+            font-size: 16px;
+            line-height: 19px;
+            height: 43px;
+            padding: 12px 8px;
+            &::placeholder {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+        .form__button {
+            height: 43px;
+            width: 271px;
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+    @media (max-width: 475px) {
+        padding: 20px;
+        &__tabs {
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+}

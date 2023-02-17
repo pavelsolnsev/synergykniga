@@ -1,0 +1,189 @@
+@import "var";
+
+@media (max-width: 1199px) {
+    body {
+        font-size: 9.31291px;
+    }
+
+    .container {
+        max-width: 620px;
+    }
+
+    .container-inner {
+        max-width: 550px;
+    }
+
+    .wrapper {
+        padding-top: 130px; // UPH-7
+        padding-top: 90px;
+        .page-lk & {
+            background: #FFF;
+        }
+    }
+
+    h2 {
+        font-size: 36.1754px;
+        line-height: 28px;
+        margin-bottom: 30px;
+    }
+
+    h3 {
+        font-size: 20.6716px;
+        line-height: 109.62%;
+    }
+
+    .cards {
+        grid-row-gap: 55px;
+
+        &__wrap {
+            max-width: 105px;
+        }
+
+        &__new {
+            top: -15px;
+            font-size: 8.12242px;
+            line-height: 8px;
+        }
+
+        &__sale {
+            margin: 5px 0;
+
+            &-discount {
+                div {
+                    font-size: 6.20149px;
+                    line-height: 6px;
+                }
+
+                div:last-child {
+                    font-size: 10.3358px;
+                    line-height: 11px;
+                }
+            }
+
+            &-price {
+                font-size: 10.3358px;
+                line-height: 11px;
+            }
+        }
+
+        &__description {
+            font-size: 7.75186px;
+            line-height: 8px;
+        }
+    }
+
+    .desc-subtitle {
+        font-size: 15.5156px;
+        line-height: 18px;
+        margin-bottom: 15px;
+        border-left: 5px solid $blue;
+        padding-left: 10px;
+
+        span {
+            font-size: 7.24061px;
+            line-height: 109.62%;
+            margin-top: 9px;
+        }
+    }
+
+    .desc-text {
+        font-size: 10.3437px;
+        line-height: 16px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 991px) {
+    h3 {
+        font-size: 28px;
+        line-height: 109.62%;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    .wrapper {
+        padding-top: 90px; // UPH-7
+    }
+
+    h2 {
+        font-size: 45px;
+        line-height: 110%;
+        margin-bottom: 15px;
+    }
+
+    .cards {
+        display: block;
+
+        &__block {
+            max-width: 166px;
+
+            img {
+                margin-bottom: 15px;
+            }
+        }
+
+        &__new {
+            font-size: 12.9186px;
+            line-height: 13px;
+        }
+
+        &__sale {
+            margin: 5px 0;
+
+            &-discount {
+                div {
+                    font-size: 10px;
+                    line-height: 104.4%;
+                }
+
+                div:last-child {
+                    font-size: 16px;
+                    line-height: 17px;
+                }
+            }
+
+            &-price {
+                font-size: 16px;
+                line-height: 17px;
+            }
+        }
+
+        &__description {
+            font-size: 13px;
+            line-height: 104.4%;
+        }
+    }
+
+    .desc-subtitle {
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 15px;
+
+        span {
+            font-size: 12px;
+            line-height: 109.62%;
+        }
+    }
+
+    .desc-text {
+        font-size: 14px;
+        line-height: 130%;
+        margin-bottom: 15px;
+        padding-left: 0;
+    }
+
+    .fixed {
+        display: flex;
+    }
+
+
+}
+
+@media (max-width: 575px) {}
+
+@media (max-width: 359px) {}

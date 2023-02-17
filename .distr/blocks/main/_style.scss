@@ -1,0 +1,15 @@
+.main {
+  &__title {
+    font-size: 116.718px;
+    line-height: 70%;
+    span {
+      font-weight: 500;
+      font-size: 65.2617px;
+
+      &:last-child {
+        color: $red;
+      }
+    }
+  }
+
+}
